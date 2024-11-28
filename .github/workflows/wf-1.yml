@@ -1,0 +1,19 @@
+# Name of the workflow
+name: WorkFlow umber 1
+
+# Condition to execute the workflox
+# workflow_dispatch allowed to manualy run the workflow
+on: workflow_dispatch
+
+# Debifne the jobs to be executed
+jobs:
+  # Define a name for the job, up to the writer
+  first_job:
+    # Define which runner to use
+    runs-on: ubuntu-latest
+    # Define the steps/actions to be executed
+    steps:
+      - name: Hello world
+        run: echo "Hello World"
+      - name: Bye
+        run: echo "Done bye :)"
